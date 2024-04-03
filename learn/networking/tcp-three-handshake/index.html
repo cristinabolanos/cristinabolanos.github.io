@@ -10,33 +10,32 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <!-- Custom -->
   <link href="styles/custom.css" rel="stylesheet">
-  </head>
+</head>
 
 <body>
-  <div class="container-md">
-    <div class="container-fluid mb-5">
-      <h1 class="text-center">Protocolo TCP</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dui est, vestibulum sed ante at, ultrices
-        dignissim erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla justo vitae
-        commodo
-        hendrerit. Pellentesque nisl neque, feugiat at sagittis in, posuere non sapien. Sed nec volutpat felis, et
-        rutrum
-        quam. Vivamus facilisis imperdiet suscipit. Quisque imperdiet ultrices lacus, sit amet bibendum orci varius sed.
-        Ut eget tincidunt tellus. Ut eget augue ut leo convallis blandit. Aliquam interdum, magna in ornare cursus,
-        velit
-        lorem malesuada metus, non auctor elit leo quis ante. Vivamus dapibus felis molestie pharetra porttitor. Duis ex
-        turpis, volutpat eu tellus at, sodales congue nisl. Praesent at lacus sed massa tempus elementum. Pellentesque
-        suscipit faucibus nibh, vitae porta eros blandit et. Pellentesque eu tincidunt est, vitae mattis urna. Curabitur
-        interdum ullamcorper ipsum sed semper.
-      </p>
-    </div>
-    <div class="row">
-      <div class="col-7">
-        <img src="static/sample.png" class="img-fluid" style="width: 100%;">
+  <div class="container-md my-3">
+    <!-- <h1 class="text-center mb-5">PROTOCOLO TCP</h1> -->
+    <div class="card my-5 mx-2">
+      <div class="card-body">
+        <h5 class="card-title">Recordemos...</h5>
+        <p class="card-text text-body-secondary">
+          Un segmento TCP se compone de la <strong>cabecera</strong> (<em>header</em>) y del <strong>cuerpo</strong> (<em>body</em>).
+          El tamaño de una cabecera TCP oscila entre los 20B y los 60B.
+          El <strong>número de secuencia</strong> de un segmento (SEQ) define el número del <strong>primer byte</strong> de
+          datos contenido en dicho segmento. El <strong>número de confirmación</strong> de un segmento (ACK) define el número del
+          <strong>siguiente byte</strong> que espera recibir el receptor del segmento.
+        </p>
       </div>
-      <div class="col">
-        <h2>Cuestionario:</h2>
+    </div>
+    <div class="row mx-2">
+      <div class="col-md-7 row-sm">
+        <img src="static/tcp-three-handshake.drawio.svg" class="img-fluid" style="width: 100%;">
+      </div>
+      <div class="col-md row-sm mt-md-0 mt-sm-5">
+        <h2>Caso práctico</h2>
+        <p class="my-2">
+          Descripción de la imagen...
+        </p>
         <form id="form" class="needs-validation" novalidate>
           <div id="A" class="input-group mb-3">
             <span class="input-group-text">A</span>
